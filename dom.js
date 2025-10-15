@@ -4,9 +4,10 @@ function addStationElement(station) {
     div.className = "station";
     div.innerHTML = `
       <h3>${station.name}</h3>
+      <p class="station-summary">${station.summary || ''}</p>
       <p><strong>Location:</strong> ${station.location}</p>
       <p><strong>Type:</strong> ${station.type}</p>
     `;
     list.appendChild(div);
-  }
+}
   

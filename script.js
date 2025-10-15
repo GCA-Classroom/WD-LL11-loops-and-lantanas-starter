@@ -18,10 +18,8 @@ const wishlist = [
   { id: 8, name: "Union Station", city: "Toronto" }
 ];
 function addStations(stations) {
-  // TODO: Refactor this loop using map() or forEach()
-  for (let i = 0; i < stations.length; i++) {
-    addStationElement(stations[i]);
-  }
+  // Refactored: use map() and reverse() to add stations in reverse order
+  stations.slice().reverse().map(station => addStationElement(station));
 }
 
 // 🧪 TEAM FEATURES
